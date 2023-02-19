@@ -19,7 +19,7 @@ app.get("/", (req, res) => {
 app.use("/users", UserRouter);
 app.use(authenticate);
 app.use("/notes", noteRouter);
-app.listen(8090, async () => {
+app.listen(8080, async () => {
   try {
     await connection;
     console.log("server");
