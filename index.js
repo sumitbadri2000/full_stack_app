@@ -26,5 +26,5 @@ app.listen(8090, async () => {
   } catch (error) {
     console.log(error);
   }
-  console.log("coonect");
+  console.log("connect");
 });
