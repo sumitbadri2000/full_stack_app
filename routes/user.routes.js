@@ -20,7 +20,7 @@ UserRouter.post("/register", async (req, res) => {
   }
 });
 UserRouter.post("/login", async (req, res) => {
-  const { email } = req.body;
+  const { email, pass } = req.body;
   try {
     const user = await UserModel.find({ email });
     if (user.length > 0) {
