@@ -6,6 +6,11 @@ const { noteRouter } = require("./routes/node.routes");
 const { authenticate } = require("./middleware/auth.middle");
 app.use(express.json());
 
+app.use(
+  cors({
+    origin: "*",
+  })
+);
 app.get("/", (req, res) => {
   res.send("home page");
 });
