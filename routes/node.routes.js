@@ -12,7 +12,7 @@ noteRouter.post("/create", async (req, res) => {
   const payload = req.body;
   const note = new NoteModel(payload);
   await note.save();
-  res.send("create");
+  res.send({ msg: "something create"});
 });
 
 noteRouter.delete("/delete/:id", async (req, res) => {
